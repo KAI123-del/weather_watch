@@ -12,7 +12,7 @@ function Footer() {
     return (
         <React.Fragment>
 
-            <div className='flex justify-center space-x-6 lg:space-x-10    lg:sticky  mt-8  items-center bg-transparent '>
+            <div className='flex justify-center space-x-2 lg:space-x-10    lg:sticky  mt-8  items-center bg-transparent '>
                 <div className='lg:py-4 lg:w-1/2  '>
                     <div className=' lg:py-2 lg:h-16   '>
                         <div className='flex lg:mt-2 justify-center  items-center space-x-3 lg:space-x-20 '>
@@ -31,7 +31,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex justify-center text-sm w-3/4 lg:w-1/2  tracking-widest lg:text-xl  lg:space-x-0 text-gray-200 items-center ">
-                    <div className=" lg:pb-0  ">Copyright © 2022-infinity <span className=" lg:ml-0 ml-6  font-edo ">Kailash Bhatt</span></div>
+                    <div>
+                    <div className=" lg:pb-0  ">Copyright © 2022-infinity </div><div className="text-center lg:ml-0   font-edo ">Kailash Bhatt</div>
+                    </div>
 
                 </div>
             </div>
