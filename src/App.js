@@ -7,7 +7,7 @@ import MainBacknine from './Images/mainBack10.jpg';
 
 
 function App() {
-  const [city, setCity] = useState('Search a city');
+  const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
 
 
@@ -98,7 +98,7 @@ function App() {
         </div>
         <form onSubmit={submitHandler}>
           <div className='flex items-center justify-center mt-3 lg:mt-6 '>
-            <input onChange={ChangeHandler} value={city} className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 lg:h-12 h-10 w-4/5 shadow-xl  outline-none text-center text-medium lg:text-lg lg:text-emerald-400 text-lime-400  tracking-widest ' />
+            <input onChange={ChangeHandler} value={city} placeholder="Search a city" className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 lg:h-12 h-10 w-4/5 shadow-xl  outline-none text-center text-medium lg:text-lg lg:text-emerald-400 text-lime-400  tracking-widest placeholder:text-lime-500' />
           </div>
 
         </form>
