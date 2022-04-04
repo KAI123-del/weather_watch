@@ -89,52 +89,52 @@ function App() {
 
     <React.Fragment>
       <img src={MainBackthree} className="absolute hidden lg:inline top-0 min-h-screen     " />
-      <img src={MainBacknine} className="absolute  lg:hidden top-0  " />
+      <img src={MainBacknine} className="absolute  lg:hidden top-0 min-h-screen " />
 
 
       <div className='relative '>
-        <div className='flex justify-center items-center mt-24 lg:mt-24 '>
-          <div className='lg:text-8xl text-5xl font-edo   lg:bg-gradient-to-r lg:from-lime-400 lg:to-teal-400 lg:via-emerald-400  lg:bg-clip-text text-white lg:text-transparent tracking-wide '><h1 className=''>Weather Fetch</h1></div>
+        <div className='flex justify-center items-center mt-10 lg:mt-24 '>
+          <div className='lg:text-8xl text-4xl font-edo px-4 lg:px-0   lg:bg-gradient-to-r lg:from-lime-400 lg:to-teal-400 lg:via-emerald-400  lg:bg-clip-text text-white lg:text-transparent tracking-wide '><h1 className=''>Weather Fetch</h1></div>
         </div>
         <form onSubmit={submitHandler}>
-          <div className='flex items-center justify-center mt-8 lg:mt-6 '>
-            <input onChange={ChangeHandler} value={city} className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 h-12 w-4/5 shadow-xl  outline-none text-center text-lg lg:text-emerald-400 text-lime-400  tracking-widest ' />
+          <div className='flex items-center justify-center mt-3 lg:mt-6 '>
+            <input onChange={ChangeHandler} value={city} className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 lg:h-12 h-10 w-4/5 shadow-xl  outline-none text-center text-medium lg:text-lg lg:text-emerald-400 text-lime-400  tracking-widest ' />
           </div>
 
         </form>
         {!weather ? (<div className='px-8'><div className='flex  relative justify-center items-center lg:mt-24 mt-48 text-white'>
           <div className='lg:w-3/5 lg:h-20 w-full h-20 rounded-xl opacity-30 bg-black absolute'></div>
-          <p className='tracking-wide lg:text-xl lg:font-normal font-semibold px-4 lg:px-0 lg:text-white relative  '>Oops!!! No data found for the entered city. Try with a different city name.</p></div><div className='mt-80 '><Footer /></div></div> ) : <div>
-          <div className=' flex  justify-center items-center bg-transparent mt-16 lg:mt-0 lg:pt-24 '>
+          <p className='tracking-wide lg:text-xl lg:font-normal font-semibold px-4 lg:px-0 lg:text-white relative  '>Oops!!! No data found for the entered city. Try with a different city name.</p></div><div className='mt-60 '><Footer /></div></div> ) : <div>
+          <div className=' flex  justify-center items-center bg-transparent px-6 lg:px-0 mt-16 lg:mt-0 lg:pt-24 '>
             
-            <div className='relative  lg:bg-transparent shadow-lime-400 lg:shadow-gray-400 shadow-lg rounded-xl pt-4 pb-4  text-white  lg:w-2/5 text-lg  lg:text-2xl lg:gap-y-20 lg:gap-x-10 lg:px-8 px-4 '>
+            <div className='relative   lg:bg-transparent shadow-lime-400 lg:shadow-gray-400 shadow-lg rounded-xl pt-4 pb-4  text-white  lg:w-2/5 text-lg  lg:text-2xl lg:gap-y-20 lg:gap-x-10 lg:px-8 px-4 '>
 
-              <div className='w-full mb-3 flex space-x-8 lg:space-x-8  p-1   justify-center items-center '><div className=''><span className='font-semibold'>City :</span> <span className='font-gotham'>{weather[2]}</span></div><div className=''> <span className='font-semibold'>Country :</span><span className='ml-2 font-gotham'>{weather[5].country}</span></div></div>
-              <div className='flex mb-4 space-x-20  p-1 justify-center items-center'>
+              <div className='w-full lg:mb-3 flex space-x-12 lg:space-x-8  p-1   justify-center items-center '><div className=''><span className='font-semibold'>City :</span> <span className='font-gotham'>{weather[2]}</span></div><div className=''> <span className='font-semibold'>Country :</span><span className='ml-2 font-gotham'>{weather[5].country}</span></div></div>
+              <div className='flex lg:mb-4 lg:space-x-20 space-x-8  p-1 justify-center items-center'>
                 <div><span className='font-semibold'>Sunrise :</span> <span className='font-gotham'>{weather[4]}</span></div>
                 <div><span className='font-semibold' >Sunset :</span><span className='ml-2 font-gotham'>{weather[3]}</span></div>
               </div>
-              <div className='relative flex  items-center  p-1 justify-center space-x-8 mb-4  '><div>
-                <div className='w-28 h-24 absolute top-0 rounded-xl bg-white  lg:bg-gray-600 opacity-25'></div>
-                <img className=' relative rounded-xl w-28 h-24' src={`http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`} />
+              <div className='relative flex mt-2 lg:mt-0  items-center  p-1 justify-center space-x-8 lg:mb-4  '><div>
+                <div className='lg:w-28 lg:h-24 w-24 h-20 absolute top-0 rounded-xl bg-white  lg:bg-gray-600 opacity-25'></div>
+                <img className=' relative rounded-xl lg:w-28 lg:h-24 w-24 h-20' src={`http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`} />
               </div>
                 <div><span className='font-semibold' >weather : </span><span className='font-gotham'>{weather[0].main}</span></div>
               </div>
-              <div className='flex mb-4  space-x-20  p-1 justify-center items-center'>
-              <div className=''><span className='font-semibold'>pressure : </span><span className='font-gotham'>{weather[1].pressure}  hpa</span></div>
-              <div className=''><span className='font-semibold'>humidity :</span><span className='ml-2 font-gotham'>{weather[1].humidity}  g/Kg</span></div>
+              <div className='flex lg:mb-4  mt-2 lg:mt-0 text-base lg:text-2xl space-x-6  lg:space-x-20  lg:p-1 justify-center items-center'>
+              <div className=''><span className='font-semibold'>pressure : </span><span className='font-gotham'>{weather[1].pressure} hpa </span></div>
+              <div className=''><span className='font-semibold'>humidity :</span><span className='ml-2 font-gotham'>{weather[1].humidity} g/Kg</span></div>
               </div>
-              <div className='flex mb-4  justify-center  p-1 items-center'>
+              <div className='flex lg:mb-4 mt-4 lg:mt-0 justify-center  lg:p-1 items-center'>
               <div className='font-gotham'>{weather[1].temp} Celsius</div>
               </div>
               
-                <div className='flex justify-center items-center   p-1 mb-4'><span className='font-semibold mr-3'>max temp:  </span> <span className='font-gotham'> {weather[1].temp_max}  Celsius</span></div>
+                <div className='flex justify-center items-center   p-1 lg:mb-4'><span className='font-semibold mr-3'>max temp:  </span> <span className='font-gotham'> {weather[1].temp_max}  Celsius</span></div>
                 <div className='flex justify-center items-center '><span className='font-semibold mr-3'>min temp : </span><span className='font-gotham'>{weather[1].temp_min}  Celsius</span></div>
               
 
 
             </div></div>
-            <div className='lg:bg-black px-8 lg:px-0  lg:border-t mt-16 lg:mt-10'>
+            <div className='lg:bg-black px-8 lg:px-0  lg:border-t mt-24 lg:mt-8'>
             <Footer/>
             </div>
 
