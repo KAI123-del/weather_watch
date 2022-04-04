@@ -94,15 +94,15 @@ function App() {
 
       <div className='relative '>
         <div className='flex justify-center items-center mt-24 lg:mt-24 '>
-          <div className='lg:text-8xl text-5xl font-gotham  lg:bg-gradient-to-r lg:from-lime-400 lg:to-teal-400 lg:via-emerald-400  lg:bg-clip-text text-white lg:text-transparent tracking-wide '><h1 className=''>Weather Fetch</h1></div>
+          <div className='lg:text-8xl text-5xl font-edo   lg:bg-gradient-to-r lg:from-lime-400 lg:to-teal-400 lg:via-emerald-400  lg:bg-clip-text text-white lg:text-transparent tracking-wide '><h1 className=''>Weather Fetch</h1></div>
         </div>
         <form onSubmit={submitHandler}>
-          <div className='flex items-center justify-center mt-8 lg:mt-3 '>
-            <input onChange={ChangeHandler} value={city} className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 h-12 w-4/5 shadow-xl  outline-none text-center text-lg lg:text-emerald-400 text-lime-400  tracking-widest' />
+          <div className='flex items-center justify-center mt-8 lg:mt-6 '>
+            <input onChange={ChangeHandler} value={city} className='border-b-4 border-teal-400 lg:border-lime-500 rounded-full lg:w-3/5 h-12 w-4/5 shadow-xl  outline-none text-center text-lg lg:text-emerald-400 text-lime-400  tracking-widest ' />
           </div>
 
         </form>
-        {!weather ? (<div className='px-8'><div className='flex relative justify-center items-center lg:mt-24 mt-48 text-white'>
+        {!weather ? (<div className='px-8'><div className='flex  relative justify-center items-center lg:mt-24 mt-48 text-white'>
           <div className='lg:w-3/5 lg:h-20 w-full h-20 rounded-xl opacity-30 bg-black absolute'></div>
           <p className='tracking-wide lg:text-xl lg:font-normal font-semibold px-4 lg:px-0 lg:text-white relative  '>Oops!!! No data found for the entered city. Try with a different city name.</p></div><div className='mt-80 '><Footer /></div></div> ) : <div>
           <div className=' flex  justify-center items-center bg-transparent mt-16 lg:mt-0 lg:pt-24 '>

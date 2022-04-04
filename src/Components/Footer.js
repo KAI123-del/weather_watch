@@ -31,7 +31,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex justify-center text-sm w-1/2  tracking-widest lg:text-xl  lg:space-x-0 text-gray-200 items-center ">
-                    <div className=" lg:pb-0  ">Copyright © 2022-infinity <span className="ml-10 lg:ml-0 font-gotham ">Kailash Bhatt</span></div>
+                    <div className=" lg:pb-0  ">Copyright © 2022-infinity <span className="ml-10 lg:ml-0 font-edo ">Kailash Bhatt</span></div>
 
                 </div>
             </div>

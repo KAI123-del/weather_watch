@@ -18,7 +18,8 @@ module.exports = {
         slate:colors.slate,
       },
       fontFamily:{
-        'gotham':'Gotham Ultra',
+        'edo':'gothamone',
+        'gotham':'gothamtwo'
       }
       
     },
