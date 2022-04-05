@@ -104,7 +104,7 @@ function App() {
         </form>
         {!weather ? (<div className='px-8'><div className='flex  relative justify-center items-center lg:mt-24 mt-48 text-white'>
           <div className='lg:w-3/5 lg:h-20 w-full h-20 rounded-xl opacity-30 bg-black absolute'></div>
-          <p className='tracking-wide lg:text-xl lg:font-normal font-semibold px-4 lg:px-0 lg:text-white relative  '>Oops!!! No data found for the entered city. Try with a different city name.</p></div><div className='mt-72 lg:mt-96 '><Footer /></div></div> ) : <div>
+          <p className='tracking-wide lg:text-xl lg:font-normal font-semibold px-4 lg:px-0 lg:text-white relative  '>Oops!!! No data found for the entered city. Try with a different city name.</p></div><div className='mt-52 lg:mt-96 '><Footer /></div></div> ) : <div>
           <div className=' flex  justify-center items-center bg-transparent px-6 lg:px-0 mt-16 lg:mt-0 lg:pt-24 '>
             
             <div className='relative   lg:bg-transparent shadow-lime-400 lg:shadow-gray-400 shadow-lg rounded-xl pt-4 pb-4  text-white  lg:w-2/5 text-lg  lg:text-2xl lg:gap-y-20 lg:gap-x-10 lg:px-8 px-4 '>
@@ -134,7 +134,7 @@ function App() {
 
 
             </div></div>
-            <div className='lg:bg-black px-8 lg:px-0  lg:border-t mt-28 lg:mt-8'>
+            <div className='lg:bg-black px-8 lg:px-0  lg:border-t mt-16 lg:mt-8'>
             <Footer/>
             </div>
 
